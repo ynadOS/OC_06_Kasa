@@ -5,7 +5,7 @@ import NotFound from '../pages/NotFound/NotFound'
 
 const AppRouter = () => {
     return (
-      <Router>
+      <Router basename='/OC_P6_Kasa'>
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
