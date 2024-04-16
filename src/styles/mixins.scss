@@ -1,0 +1,26 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@mixin max-width-body {
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+@mixin margin-container {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@mixin w100-hauto {
+  width: 100%;
+  height: auto;
+}
+
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
