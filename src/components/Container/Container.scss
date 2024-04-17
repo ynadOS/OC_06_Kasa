@@ -1,0 +1,12 @@
+@import '../../styles/App.scss';
+
+
+.container {
+    @include margin-top-bottom;
+    @include margin-container;
+    @include mobile {
+            @include margin-container-mobile
+        }
+}
+
+

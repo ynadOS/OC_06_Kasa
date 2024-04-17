@@ -1,11 +1,10 @@
-
-import Header from '../../components/Header/Header'
+import Container from '../../components/Container/Container'
 
 const Home = () => {
     return (
         <div>
-            <Header />
-        </div>
+    </div>
+
 
     )
 }
