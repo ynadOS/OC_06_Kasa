@@ -7,7 +7,6 @@ import HomeContent from './HomeContent/HomeContent'
 const Container = () => {
     const location = useLocation();
 
-
     return (
         <div className="container">
             {location.pathname === '/' && <HomeContent />}
