@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/OC_P6_Kasa/static/css/main.9470aedd.css",
-    "main.js": "/OC_P6_Kasa/static/js/main.2d3450fb.js",
+    "main.css": "/OC_P6_Kasa/static/css/main.16ca985e.css",
+    "main.js": "/OC_P6_Kasa/static/js/main.dfebeed1.js",
     "static/js/453.fde79911.chunk.js": "/OC_P6_Kasa/static/js/453.fde79911.chunk.js",
     "static/media/banner_about.png": "/OC_P6_Kasa/static/media/banner_about.267ac2c290cc7501e1c1.png",
     "static/media/banner_home.png": "/OC_P6_Kasa/static/media/banner_home.9a0b9b384459e705d7c3.png",
     "static/media/Montserrat-VariableFont_wght.ttf": "/OC_P6_Kasa/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
     "index.html": "/OC_P6_Kasa/index.html",
-    "main.9470aedd.css.map": "/OC_P6_Kasa/static/css/main.9470aedd.css.map",
-    "main.2d3450fb.js.map": "/OC_P6_Kasa/static/js/main.2d3450fb.js.map",
+    "main.16ca985e.css.map": "/OC_P6_Kasa/static/css/main.16ca985e.css.map",
+    "main.dfebeed1.js.map": "/OC_P6_Kasa/static/js/main.dfebeed1.js.map",
     "453.fde79911.chunk.js.map": "/OC_P6_Kasa/static/js/453.fde79911.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9470aedd.css",
-    "static/js/main.2d3450fb.js"
+    "static/css/main.16ca985e.css",
+    "static/js/main.dfebeed1.js"
   ]
 }
