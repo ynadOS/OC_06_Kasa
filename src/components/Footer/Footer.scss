@@ -1,0 +1,15 @@
+@import '../../styles/App.scss';
+
+.footer {
+    @include flex-center;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    height: $footer-height;
+    background-color: $black-color;
+    color: white;
+
+    .footer__logo {
+        width: auto;
+    }
+}

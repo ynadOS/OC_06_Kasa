@@ -1,0 +1,41 @@
+@import '/src/styles/App.scss';
+
+.notfound {
+    @include flex-center;
+    flex-direction: column;
+    flex-grow: 1; /* Le contenu principal prend toute la place disponible */
+    overflow-y: auto; /* Ajoute une barre de défilement si nécessaire */
+    color: $main-color;
+    @include mobile {
+        text-align: center;
+        @include margin-bottom-mobile;
+    }
+    
+    .notfound__title {
+        @include margin-bottom;
+        font-size: 288px;
+        font-weight: 700;
+        @include mobile {
+            font-size: 96px;
+            @include margin-bottom-mobile;
+        }
+    }
+
+    .notfound__text {
+        @include margin-bottom;
+        font-size: 36px;
+        @include mobile {
+            font-size: 18px;
+            @include margin-bottom-mobile;
+        }
+    }
+
+    .notfound__return {
+        @include margin-bottom;
+        color: $black-color;
+        text-decoration: underline;
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+}

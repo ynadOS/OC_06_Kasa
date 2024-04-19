@@ -1,0 +1,24 @@
+@import '../../../styles/App.scss';
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Pour répartir les éléments sur toute la largeur */
+    gap: 30px;
+    background-color: $gray-container;
+    padding: 30px;
+    @include large-radius;
+    @include mobile {
+        padding: 0;
+        background-color: transparent;
+    }
+
+        .cards__display {
+            width: calc(33.33% - 20px); /* Chaque élément occupe un tiers de la largeur, moins les marges */
+            height: calc(width);
+            box-sizing: border-box; /* Pour inclure les bordures et le padding dans la largeur calculée */
+            @include mobile {
+                width: 100%;
+            }
+        }
+}
