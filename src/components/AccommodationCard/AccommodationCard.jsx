@@ -1,11 +1,9 @@
 // AccommodationCard.js
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../AccommodationCard/AccommodationCard.scss';
-import data from '../../data/logements.json'
 
 const AccommodationCard = ({ accommodation }) => {
-  const { id, title, cover } = accommodation;
+  const { title, cover } = accommodation;
 
   return (
     <div className='cards'>

@@ -4,10 +4,18 @@
     @include flex-center;
     width: 100%;
     flex-direction: column;
-    gap: 20px;
+    gap: $medium-gap;
     height: $footer-height;
     background-color: $black-color;
     color: white;
+    margin-top: $smaller-gap;
+    @include mobile {
+        
+    }
+    .right-reserved {
+        margin: 0 30%;
+        text-align: center;
+    }
 
     .footer__logo {
         width: auto;

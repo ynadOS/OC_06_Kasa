@@ -10,7 +10,7 @@
 }
 
 .accommodation-and-host {
-    margin-top: 20px;
+    margin-top: $medium-gap;
     @include mobile {
         flex-direction: column;
     }
@@ -55,9 +55,10 @@
         @include mobile {
             flex-direction: row-reverse;
             align-items: center;
-            margin-bottom: 20px;
         }
-        
+    }
+    .host-and-rating .rating {
+        white-space: nowrap;
     }
     .host {
         @include flex-center;
@@ -71,7 +72,22 @@
             width: 64px;
             height: 64px;
             border-radius: 50%;
-            margin-left: 10px;
+            margin-left: $small-gap;
         }
         }
+}
+
+.description-and-equipment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $large-gap;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.collapse-content {
+    height: auto;
 }

@@ -1,0 +1,53 @@
+@import '../../styles/App.scss';
+
+/* Supprime les marges et les puces des listes non ordonnées et ordonnées pour la partie Équipements */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+    @include medium-radius;
+    background-color: $main-color;
+    outline: none;
+    border: none;   
+    width: 100%;
+    height: 52px;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $small-gap;
+    margin-top: $small-gap;
+    cursor: pointer;
+    @include mobile {
+      height: $large-gap;
+      margin-top: $smaller-gap;
+    }
+}
+
+.collapse__content {
+  background-color: $gray-container;
+  border-radius: 10px 10px 5px 5px;
+  padding: 20px;
+  height: auto;
+  @include mobile {
+    margin-bottom: $smaller-gap;
+  }
+}
+
+.chevron {
+    width: 24px;
+    transition: transform 0.3s ease;
+    @include mobile {
+      width: 18px;
+    }
+  }
+  
+  .chevron.open {
+    transform: rotate(-180deg);
+  }
+  

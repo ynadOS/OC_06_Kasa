@@ -1,2 +1,8 @@
 @import '../../../styles/App.scss';
 
+.about-texts {
+    margin: 0 5%;
+    @include mobile {
+        margin: 0;
+    }
+}

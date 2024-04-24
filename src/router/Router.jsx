@@ -4,8 +4,6 @@ import Home from '../pages/Home/Home'
 import About from '../pages/About/About'
 import Accommodation from '../pages/Accommodation/Accommodation'
 import NotFound from '../pages/NotFound/NotFound'
-import AccommodationCard from '../components/AccommodationCard/AccommodationCard'
-import AccommodationDetails from '../components/Container/AccommodationDetails/AccommodationDetails'
 
 const AppRouter = () => {
     return (

@@ -12,6 +12,7 @@
       position: relative;
       @include mobile {
         height: 255px;
+        margin-top: $medium-gap;
       }
     }
   
@@ -26,21 +27,21 @@
       cursor: pointer;
       z-index: 1; // Assure que les boutons sont au-dessus de l'image
       @include mobile {
-        width: 30px;
+        width: $large-gap;
       }
     }
   
     .slideshow__button--prev {
-      left: 10px; // Ajustez la position de la flèche gauche
+      left: $smaller-gap; // Ajustez la position de la flèche gauche
     }
   
     .slideshow__button--next {
-      right: 10px; // Ajustez la position de la flèche droite
+      right: $smaller-gap; // Ajustez la position de la flèche droite
     }
   
     .slideshow__counter {
       position: absolute;
-      bottom: 10px;
+      bottom: $smaller-gap;
       left: 50%;
       transform: translateX(-50%);
       color: #ffffff;

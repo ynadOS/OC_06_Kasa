@@ -9,7 +9,8 @@
     padding: 30px;
     @include large-radius;
     @include mobile {
-        padding: 0;
+        gap: 20px;
+        padding: 0 0 20px 0;
         background-color: transparent;
     }
 
