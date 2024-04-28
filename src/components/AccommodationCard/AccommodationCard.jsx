@@ -1,9 +1,7 @@
-// AccommodationCard.js
-import React from 'react';
-import '../AccommodationCard/AccommodationCard.scss';
+import '../AccommodationCard/AccommodationCard.scss'
 
 const AccommodationCard = ({ accommodation }) => {
-  const { title, cover } = accommodation;
+  const { title, cover } = accommodation
 
   return (
     <div className='cards'>
@@ -17,4 +15,4 @@ const AccommodationCard = ({ accommodation }) => {
   );
 };
 
-export default AccommodationCard;
+export default AccommodationCard

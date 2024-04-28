@@ -1,7 +1,8 @@
-import '../Header/Header.scss';
-import { Link } from 'react-router-dom'; // Assurez-vous d'importer Link depuis 'react-router-dom'
-import logo from "../../assets/images/logo.png";
-import NavigationMenu from '../NavigationMenu/NavigationMenu';
+import '../Header/Header.scss'
+import { Link } from 'react-router-dom'
+import logo from "../../assets/images/logo.png"
+
+import NavigationMenu from '../NavigationMenu/NavigationMenu'
 
 const Header = () => {
     return (
@@ -20,4 +21,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Header

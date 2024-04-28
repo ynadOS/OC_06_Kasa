@@ -1,5 +1,5 @@
 import '../HomeContent/HomeContent.scss'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import AccommodationCard from '../../AccommodationCard/AccommodationCard'
 import data from '../../../data/logements.json'
 import Banner from '../../Banner/Banner'
@@ -19,7 +19,7 @@ const HomeContent = () => {
                 ))}
             </div>
         </div>
-)
+) 
 }
 
-export default HomeContent;
+export default HomeContent

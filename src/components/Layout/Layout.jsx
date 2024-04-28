@@ -1,7 +1,6 @@
-// Layout.jsx
 import '../Layout/Layout.scss'
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 import Container from '../Container/Container'
 
 const Layout = ({ children }) => {
@@ -14,7 +13,7 @@ const Layout = ({ children }) => {
             </main>
             <Footer />
         </div>
-    );
-};
+    )
+}
 
 export default Layout

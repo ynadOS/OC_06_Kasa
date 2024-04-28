@@ -13,7 +13,6 @@ const Collapse = ({ title, children }) => {
     <div className="collapse">
       <button onClick={toggleCollapse} className="collapse__toggle">
         {title}
-        {/* Utilisation du chevron up avec rotation en fonction de l'état du Collapse */}
         <img src={ChevronUp} alt="Toggle" className={`chevron ${isOpen ? 'open' : 'closed'}`} />
       </button>
       {isOpen && <div className="collapse__content">{children}</div>}

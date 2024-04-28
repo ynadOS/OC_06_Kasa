@@ -1,5 +1,5 @@
-
 import NotFoundContent from '../../components/Container/NotFoundContent/NotFoundContent'
+
 const NotFound = () => {
     return (
         <div>

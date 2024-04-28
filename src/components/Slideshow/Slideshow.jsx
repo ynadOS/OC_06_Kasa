@@ -1,22 +1,22 @@
-import React, { useState } from "react";
-import '../Slideshow/Slideshow.scss';
-import ChevronLeft from '../../assets/images/chevron_left.png';
-import ChevronRight from '../../assets/images/chevron_right.png';
+import { useState } from "react"
+import '../Slideshow/Slideshow.scss'
+import ChevronLeft from '../../assets/images/chevron_left.png'
+import ChevronRight from '../../assets/images/chevron_right.png'
 
 const Slideshow = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   const goToNextSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+    )
+  }
 
   const goToPrevSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
+    )
+  }
 
   return (
     <div className="slideshow">
@@ -29,7 +29,7 @@ const Slideshow = ({ images }) => {
       </button>
       <span className='slideshow__counter'>{`${currentIndex + 1}/${images.length}`}</span>
     </div>
-  );
-};
+  )
+}
 
-export default Slideshow;
+export default Slideshow

@@ -9,8 +9,7 @@
   box-sizing: border-box;
 }
 
-// MARGINS //
-@mixin margin-container { // Marges droite et gauche de l'entête + corps
+@mixin margin-container {
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -27,18 +26,17 @@
   margin-bottom: 20%;
 }
 
-@mixin w100-hauto { // Width 100 Heigh auto
+@mixin w100-hauto {
   width: 100%;
   height: auto;
 }
 
-@mixin mobile { // Mixin pour media queries tablette + mobile
+@mixin mobile {
   @media (max-width: 767px) {
     @content;
   }
 }
 
-// Les différents border-radius de la page (3 types)
 @mixin large-radius {
   border-radius: 25px;
 }

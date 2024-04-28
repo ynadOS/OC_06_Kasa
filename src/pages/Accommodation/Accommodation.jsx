@@ -1,24 +1,30 @@
+import '../Accommodation/Accommodation.scss'
+import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import data from '../../data/logements.json'
-import '../Accommodation/Accommodation.scss'
 import NotFound from '../NotFound/NotFound'
-import Slideshow from '../../components/Slideshow/Slideshow';
-import Rating from '../../components/Rating/Rating';
-import Collapse from '../../components/Collapse/Collapse';
+import Slideshow from '../../components/Slideshow/Slideshow'
+import Rating from '../../components/Rating/Rating'
+import Collapse from '../../components/Collapse/Collapse'
 
 const Accommodation = () => {
-  const { id } = useParams();
-  const accommodation = data.find((item) => item.id === id);
+  const { id } = useParams()
+  const [accommodation, setAccommodation] = useState(null)
+
+  useEffect(() => {
+    const foundAccommodation = data.find((item) => item.id === id)
+    setAccommodation(foundAccommodation)
+  }, [id])
 
   if (!accommodation) {
     return <div>
       <NotFound />
-    </div>;
+    </div>
   }
 
-  const hostNames = accommodation.host.name.split(' ');
-  const firstName = hostNames[0];
-  const lastName = hostNames[1];
+  const hostNames = accommodation.host.name.split(' ')
+  const firstName = hostNames[0]
+  const lastName = hostNames[1]
 
   return (
     <div className='container'>
@@ -27,12 +33,10 @@ const Accommodation = () => {
           <Slideshow images={accommodation.pictures} />
         </div>
         <div className="accommodation-and-host">
-          {/* Flat infos text */}
           <div className="accommodation-global-infos">
             <h2 className='accommodation__title'>{accommodation.title}</h2>
             <p className='accommodation__location'>{accommodation.location}</p>
             <div className='accommodation__tags'>
-              {/* Mapping over tags and applying styles */}
               {accommodation.tags.map((tag, index) => (
                 <p key={index} className={`tag-${index}`}>
                   {tag}
@@ -41,7 +45,6 @@ const Accommodation = () => {
             </div>
           </div>
 
-          {/* Host & rating div */}
           <div className="host-and-rating">
             <div className="host">
               <p className='host__name'>{firstName}<br />{lastName}</p>
@@ -53,24 +56,22 @@ const Accommodation = () => {
           </div>
         </div>
         <div className="description-and-equipment">
-          {/* Collapse component for Description */}
           <Collapse title="Description">
             <p className='collapse-content'>{accommodation.description}</p>
           </Collapse>
-          {/* Collapse component for Equipment */}
           <Collapse title="Équipements">
-            <p className="collapse-content">
-            <ul>
-              {accommodation.equipments.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-            </p>
+            <div className="collapse-content">
+              <ul>
+                {accommodation.equipments.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
           </Collapse>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Accommodation;
+export default Accommodation

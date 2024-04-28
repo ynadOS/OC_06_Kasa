@@ -2,4 +2,12 @@
 
 .star {
     width: 24px;
+    // padding-left: $tiny-gap; à mettre si on met les étoiles caractères
+}
+.active {
+    color: $main-color;
+}
+
+.inactive {
+    color: gray;
 }

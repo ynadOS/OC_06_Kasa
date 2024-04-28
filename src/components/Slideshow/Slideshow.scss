@@ -25,18 +25,18 @@
       width: 45px;
       height: auto;
       cursor: pointer;
-      z-index: 1; // Assure que les boutons sont au-dessus de l'image
+      z-index: 1; 
       @include mobile {
         width: $large-gap;
       }
     }
   
     .slideshow__button--prev {
-      left: $smaller-gap; // Ajustez la position de la flèche gauche
+      left: $smaller-gap;
     }
   
     .slideshow__button--next {
-      right: $smaller-gap; // Ajustez la position de la flèche droite
+      right: $smaller-gap;
     }
   
     .slideshow__counter {

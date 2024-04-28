@@ -24,8 +24,8 @@
             left: 50%;
             transform: translate(-50%, -50%);
             white-space: nowrap;
-            color: white; // Couleur du texte
-            font-size: 48px; // Taille de la police
+            color: white;
+            font-size: 48px;
 
             @include mobile {
                 white-space: wrap;
